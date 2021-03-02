@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular001';
+  diaSemana:string = "Domingo";  
+  edad:number = 8;
+  sumar(x:number, y:number){
+return x+y;
+  }
+
+  cadenaTexto:string = "Ingrese su nombre";
 }
