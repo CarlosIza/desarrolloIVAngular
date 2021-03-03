@@ -68,12 +68,24 @@
       </div>
       <div>
         <h2>properies binding <br></h2>
-        <p>las propiedades van con los corchetes</p>
+        <p>las propiedades van con los corchetes,one </p>
         <p>
             <br>
-         <input  type="text" class="form-container" [placeholder]="cadenaTexto">
+         <input  type="text" class="form-container" [placeholder]="cadenaTexto" [disabled] ="valor" >
+        
      </p>
       </div>
-      
+      <img [src]="rutaImagen"
+       alt="imagen" width="200px" height="200px">
+       <div>
+         <h3>{{textoEventBinding}}</h3>
+         <button class="btn btn-primary" (click)="cambiarTexto()">Enviar</button>
+       </div>
+       <div>
+         <h6>two way binding</h6>
+         <input type="text" class="form-control" placeholder="Ingrese su nombrea qui"[(ngModel)]="cadena">
+         <br>
+         {{cadena}}
+       </div>
   </div>
 
